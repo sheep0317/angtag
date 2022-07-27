@@ -1,0 +1,9 @@
+<p>upload-image works!</p>
+<div class="wrap">
+    <div class="upload-image">
+        <button (click)="uploadImage()">Upload</button>
+        <input type="file" accept="image/png, image/jpeg" (change)="previewImage($event)"/>
+        <img src="{{imageSrc}}" alt="" class="show-image">
+
+    </div>
+</div>

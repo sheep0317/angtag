@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;0,500;0,600;1,200&display=swap');
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    
+    transition: ease-in-out 0.2s;
+}
+.login-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.funny-image{
+    border-left: 1px solid black;
+}
+.form-group{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.form-group p{
+    font-size: 14pt;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.form-group input[type='email'],
+.form-group input[type='password']{
+    width: auto;
+    font-size: 16pt;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #000;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transition: ease-in-out 0.2s;
+}
+.form-group input[type='email']:hover,
+.form-group input[type='password']:hover{
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    outline: none;
+    transition: ease-in-out 0.2s;
+}
+.form-group input[type='email']:focus,
+.form-group input[type='password']:focus{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    transition: ease-in-out 0.2s;
+}
+.form-group.other-func{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group a{
+    font-size: 14pt;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    transition: ease-out 2s;
+}
+.form-group a:hover{
+    text-decoration: solid underline;
+    transition: ease-in 2s;
+    cursor: pointer;
+}
+.form-group:nth-child(last-child){
+    height: 125px;
+}
+button.button-submit{
+    font-size: 16pt;
+    background-color: black;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: ease-in-out 0.2s;
+}
+button.button-submit:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+    transition: ease-in-out 0.2s;
+    transform: translateX(-3px) translateY(-3px);
+}
+button.button-submit:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid black;
+    transition: ease-in-out 0.2s;
+    transform: translateX(-3px) translateY(-3px);
+}
+.funny-image{
+    width: auto;
+    height: 100%;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/information-tag.appspot.com/o/assets%2FFrame%201.png?alt=media&token=34a7b13c-6ad0-48e3-bbe5-26c8549cdaa5');
+    background-size: cover;
+    filter: grayscale(70%);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid black;
+}
+@media  screen and (max-width: 960px) {
+    
+    .wrap{
+        grid-template-columns:  2fr 1fr;
+        transition: ease-in-out 0.5s;
+    }
+}
+@media screen and (max-width: 700px){
+    .wrap{
+        grid-template-columns: 1fr;
+        
+        transition: ease-in-out 0.2s;
+    }
+    .funny-image{
+        display: none;
+    }
+    .login-card{
+        padding-top: 50px;
+        justify-content: flex-start;
+    }
+    
+}
